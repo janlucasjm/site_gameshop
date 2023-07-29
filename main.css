@@ -12,8 +12,8 @@
     --cor-fundo: #1A5D1A;
     --cor-principal: #fef1c3;
     --cor-hover: #3ca83c;
-    --fonte-principal: 'Bungee', cursive;
-    --font-secundaria: 'Roboto', sans-serif;
+    --fonte-principal: 'Alfa Slab One', cursive;
+    --font-secundaria: 'Secular One', sans-serif;
 }
 
 /* Header Nav */
@@ -39,6 +39,11 @@ section h3,
 form button {
     font-family: var(--fonte-principal);
     font-weight: normal;
+    letter-spacing: 2px;
+}
+
+header .container h1 {
+    letter-spacing: 5px;
 }
 
 header nav li{
