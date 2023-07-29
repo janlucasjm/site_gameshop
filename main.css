@@ -9,14 +9,18 @@
 /* Variaveis */
 
 :root {
-    --cor-fundo: #182c61;
-    --cor-principal: #ecf0f1;
-    --cor-hover: #314e9e;
+    --cor-fundo: #1A5D1A;
+    --cor-principal: #fef1c3;
+    --cor-hover: #3ca83c;
     --fonte-principal: 'Bungee', cursive;
     --font-secundaria: 'Roboto', sans-serif;
 }
 
 /* Header Nav */
+
+body {
+    background-color: var(--cor-principal);
+}
 
 body,
 form textarea {
@@ -43,7 +47,7 @@ header nav li{
     font-size: 18px;
 }
 
-header nav li a {
+header nav li a, .container-links a {
     color: var(--cor-principal);
     text-decoration: none;
 }
@@ -77,8 +81,9 @@ section .container {
 }
 
 section {
-    padding: 24px 0;
-    color: var(--cor-fundo);;
+    padding: 40px 0 24px 0;
+    color: var(--cor-fundo);
+    height: 90vh;
 }
 
 section h2{
@@ -91,6 +96,56 @@ section p {
 
 section .store-front {
     margin-right: 32px;
+    width: 640px;
+    height: 480px;
+    object-fit: cover;
+}
+
+/* Sessão Notícias */
+
+section .news {
+    display: block;
+}
+
+.container-news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-news img {
+    height: 240px;
+    width: 350px;
+    margin-top: 20px;
+    object-fit: cover;
+    padding: 0 5px;
+}
+
+.container-links {
+    width: 370px;
+    height: 440px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    text-align: center;
+}
+
+.container-links h3 {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.container-links p {
+    width: 365px;
+    margin-bottom: 20px;
+}
+
+.container-links a {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    padding: 10px;
+}
+
+.container-links a:hover {
+    text-decoration: underline; 
 }
 
 /* Sessão Contato */
@@ -142,10 +197,12 @@ form button {
     border: none;
     align-items: center;
     cursor: pointer;
+    transition: .5s;
 }
 
 form button:hover {
-    background-color: var(--cor-hover)
+    background-color: var(--cor-hover);
+    transition: .5s;
 }
 
 form input:focus, 
