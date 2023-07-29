@@ -1,0 +1,162 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variaveis */
+
+:root {
+    --cor-fundo: #182c61;
+    --cor-principal: #ecf0f1;
+    --cor-hover: #314e9e;
+    --fonte-principal: 'Bungee', cursive;
+    --font-secundaria: 'Roboto', sans-serif;
+}
+
+/* Header Nav */
+
+body,
+form textarea {
+    font-family: var(--font-secundaria);
+}
+
+header {
+    padding: 16px 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+header, 
+section h2, 
+section h3,
+form button {
+    font-family: var(--fonte-principal);
+    font-weight: normal;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sessão Sobre */
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+    color: var(--cor-fundo);;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+section .store-front {
+    margin-right: 32px;
+}
+
+/* Sessão Contato */
+
+.social-links li img{
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contat-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contat-methods form input, 
+form textarea, 
+form button {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    border: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-hover)
+}
+
+form input:focus, 
+form textarea:focus {
+    outline-color: var(--cor-fundo);
+}
+
+/* Rodapé */
+
+footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    padding: 16px 0;
+}
